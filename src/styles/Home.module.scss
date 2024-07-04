@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fbfbfb;
+
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+
+        .wave{
+            position: absolute;
+            top: -144px;
+            left: -2px;
+        }
+        .monster{
+            position: absolute;
+            top: 116px;
+            right: 140px;
+        }
+    
+        .header {
+            text-align: start;
+            position: absolute;
+            top: 170px;
+        
+            h1 {
+            margin: 0;
+            font-size: 40px;
+            color: #2f6a74;
+            position: relative;
+            }
+        
+            p {
+            margin: 0;
+            font-size: 25px;
+            color: #2f6a74;
+            z-index: 5;
+            
+            &::after{
+                content: " ";
+                position: absolute;
+                bottom: 6px;
+                left: 0;
+                width: 90%;
+                height: 10px;
+                background: linear-gradient(90deg, rgba(0,242,160,0.272233893557423) 0%, rgba(84,168,160,0.05654761904761907) 100%);
+                align-self: stretch;
+                z-index: 1;
+            }
+            }
+        }
+        
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+}
+  

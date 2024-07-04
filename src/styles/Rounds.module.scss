@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fbfbfb;
+
+    .round{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        .wave{
+            position: absolute;
+            top: -15px;
+            left: -100px;
+        }
+        .monster{
+            margin: 10px 0 0 50px;
+        }
+
+        .header{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 20px;
+
+            h1 {
+                margin: 15px 0 0 0;
+                font-size: 35px;
+                color: #2f6a74;
+            }
+            .infos{
+                display: flex;
+                justify-content: space-between;
+                .points{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    .star{
+                        width: 25px;
+                        height: 25px;
+                    }
+                    .count{
+                        font-size: 22px;
+                    }
+                }
+                
+                span{
+                    font-size: 18px;
+                    color: #2f6a74;
+                }
+            }
+        }
+
+        .question{
+            display: flex;
+            justify-content: center;
+            .baloon{
+                padding: 15px;
+                text-align: center;
+                border: 1px solid #5de9c8;
+                background-color: #5de9c8;
+                border-radius: 15px;
+                position: relative;
+                width: 450px;
+                &::after{
+                    content: "";
+                    width: 0;
+                    rotate: 45deg;
+                    height: 0;
+                    position: absolute;
+                    border-left: 24px solid transparent;
+                    border-right: 5px solid transparent;
+                    border-top: 35px solid #5de9c8;
+                    bottom: -20px;
+                    left: 15%;
+                }
+                span{
+                    color: #2f6a74;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+
+        }
+
+        .form {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}

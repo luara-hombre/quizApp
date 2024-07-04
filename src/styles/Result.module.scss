@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fbfbfb;
+
+    .result{
+        height: 100%;
+
+        .subcard{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+
+            .infos{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                h1 {
+                    margin: 0;
+                    margin-bottom: 50px;
+                    font-size: 40px;
+                    color: #2f6a74;
+                }
+                .congratulation{
+                    color: #00f2a0;
+                    font-size: 25px;
+                }
+                span{
+                    font-size: 18px;
+                    color: #2f6a74;
+                }
+                .stars{
+                    display: flex;
+                    gap: 8px;
+                    margin: 25px 0 50px 0;
+                }
+            }
+
+            .monster{
+                position: absolute;
+                bottom: 0;
+            }
+
+        }
+    }
+}
